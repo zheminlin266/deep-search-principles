@@ -63,9 +63,22 @@ npx skills add <owner>/<repo> --skill deep-search-principles -g -y
 
 本技能遵循可移植的 `SKILL.md` 格式，不需要运行时依赖，可用于支持 skills 的 Agent，包括 Codex、Claude Code、Cursor、OpenCode 以及 skills CLI 支持的其他 Agent。
 
+## 发布到 skills.sh
+
+不需要单独上传或提交申请。发布流程是：
+
+1. 保持仓库公开，并确保 `SKILL.md` 有效。
+2. 分享安装命令：
+
+   ```bash
+   npx skills add zheminlin266/deep-search-principles
+   ```
+
+3. 等待安装量积累。[skills.sh](https://skills.sh/) 目录基于 skills CLI 的匿名使用数据生成；关闭遥测或在 CI 中完成的安装不会计入目录排名。
+
 ## 更新技能
 
-编辑 `SKILL.md`，保持 YAML frontmatter 有效，然后将变更推送到公开 GitHub 仓库。GitHub 仓库是唯一事实来源；公开仓库无需额外生成安装包即可被 skills.sh 索引。
+编辑 `SKILL.md`，保持 YAML frontmatter 有效，然后将变更推送到 GitHub。GitHub 仓库是唯一事实来源，不需要额外生成安装包。
 
 ## 贡献
 

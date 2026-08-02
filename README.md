@@ -63,9 +63,22 @@ The repository keeps `SKILL.md` at the root so it can be discovered as a single-
 
 The skill follows the portable `SKILL.md` format and does not require runtime dependencies. It can be used with skills-compatible agents, including Codex, Claude Code, Cursor, OpenCode, and others supported by the skills CLI.
 
+## Publishing to skills.sh
+
+There is no separate upload or submission form. The publishing path is:
+
+1. Keep this repository public and keep `SKILL.md` valid.
+2. Share the install command:
+
+   ```bash
+   npx skills add zheminlin266/deep-search-principles
+   ```
+
+3. Let installs accumulate. The [skills.sh](https://skills.sh/) directory is populated from anonymous CLI usage; installs with telemetry disabled or in CI do not count toward directory ranking.
+
 ## Updating the skill
 
-Edit `SKILL.md`, keep the YAML frontmatter valid, and push the change to the public GitHub repository. The repository is the source of truth; skills.sh can index the public repository without a separate generated package.
+Edit `SKILL.md`, keep the YAML frontmatter valid, and push the change to GitHub. The repository is the source of truth; no generated package is required.
 
 ## Contributing
 
