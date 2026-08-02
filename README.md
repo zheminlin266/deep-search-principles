@@ -35,6 +35,16 @@ npx skills add <owner>/<repo> --skill deep-search-principles -g -y
 
 You can also install it manually by placing `SKILL.md` in the skill directory supported by your agent.
 
+## PI-Agent setup
+
+PI-Agent/pi-coding-agent provides file and shell tools, but does not automatically include a web-search provider. Install this skill into Pi's global skill directory:
+
+```bash
+git clone https://github.com/zheminlin266/deep-search-principles ~/.pi/agent/skills/deep-search-principles
+```
+
+Then install and authenticate Tavily or Firecrawl as described in [Optional search integrations](#optional-search-integrations). Once `tvly` or `firecrawl` is available on `PATH`, Pi can invoke it through its shell tool. Restart Pi or reload skills after installation.
+
 ## Use it when
 
 Use this skill for requests such as:

@@ -35,6 +35,16 @@ npx skills add <owner>/<repo> --skill deep-search-principles -g -y
 
 也可以手动将 `SKILL.md` 放入所使用 Agent 支持的 skill 目录。
 
+## PI-Agent 接入
+
+PI-Agent / pi-coding-agent 默认提供文件和 Shell 工具，但不会自动附带联网搜索服务。可以将本技能安装到 Pi 的全局 skill 目录：
+
+```bash
+git clone https://github.com/zheminlin266/deep-search-principles ~/.pi/agent/skills/deep-search-principles
+```
+
+然后按照[可选搜索能力接入](#可选搜索能力接入)中的说明安装并登录 Tavily 或 Firecrawl。当 `tvly` 或 `firecrawl` 出现在 `PATH` 中后，Pi 就可以通过 Shell 工具调用它们。安装完成后请重启 Pi 或重新加载 skills。
+
 ## 适用场景
 
 适用于：

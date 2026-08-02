@@ -9,6 +9,16 @@ description: A source-management and evidence-verification framework for deep re
 
 本技能定义一套完整的深度搜索与信息源管理原则，用于产出带多源引用的专业研究报告。它涵盖：信息源的数量与质量标准、引用规范、搜索执行流程（来源地图、时效窗口、查询族、重试机制、饱和度判定）、证据记录（覆盖矩阵与证据账本）以及外部内容安全。任何涉及"深度研究/行业分析/竞品调研/综述报告"的任务都应遵循本原则。
 
+## 工具接入与能力边界
+
+本技能本身不捆绑联网搜索服务、API 密钥或第三方 CLI，不能凭空为 Agent 创建网络访问能力。执行研究前先检查宿主 Agent 是否提供联网搜索；若没有，可按 README 单独配置 Tavily 或 Firecrawl：
+
+- **Tavily**：用于广泛来源发现、时效筛选和结构化搜索。典型命令：`tvly search "query" --depth advanced --max-results 10 --include-raw-content --json`。
+- **Firecrawl**：用于搜索结果的全文抓取和页面核验。典型命令：`firecrawl search "query" --scrape --scrape-formats markdown -o .firecrawl/search.json --json`。
+- 二者都不可用时，必须明确说明无法联网核验；不得把记忆、搜索摘要或编造内容当作最新事实。
+
+搜索工具负责发现和获取材料，本技能负责查询设计、来源评估、交叉验证、证据记录和安全处理。
+
 ## 一、核心原则
 
 1. **事实可追溯**：每个事实性陈述必须绑定可核验来源，禁止无来源的关键断言。
