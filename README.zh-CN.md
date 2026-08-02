@@ -26,11 +26,10 @@
 将本仓库发布到 GitHub 后，可通过开源 skills CLI 安装：
 
 ```bash
-# 将 <owner>/<repo> 替换为公开 GitHub 仓库的所有者和仓库名。
-npx skills add <owner>/<repo> --skill deep-search-principles
+npx skills add zheminlin266/deep-search-principles --skill deep-search-principles
 
 # 全局安装并跳过交互确认。
-npx skills add <owner>/<repo> --skill deep-search-principles -g -y
+npx skills add zheminlin266/deep-search-principles --skill deep-search-principles -g -y
 ```
 
 也可以手动将 `SKILL.md` 放入所使用 Agent 支持的 skill 目录。

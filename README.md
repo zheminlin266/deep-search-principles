@@ -26,11 +26,10 @@ This skill defines research discipline. It does not provide a search engine, pai
 After publishing this repository, install it with the open agent skills CLI:
 
 ```bash
-# Replace with the public GitHub repository owner and name.
-npx skills add <owner>/<repo> --skill deep-search-principles
+npx skills add zheminlin266/deep-search-principles --skill deep-search-principles
 
 # Install globally and skip prompts.
-npx skills add <owner>/<repo> --skill deep-search-principles -g -y
+npx skills add zheminlin266/deep-search-principles --skill deep-search-principles -g -y
 ```
 
 You can also install it manually by placing `SKILL.md` in the skill directory supported by your agent.
