@@ -1,5 +1,7 @@
 # 深度搜索原则（Deep Search Principles）
 
+[![skills.sh](https://skills.sh/b/zheminlin266/deep-search-principles)](https://skills.sh/zheminlin266/deep-search-principles)
+
 一个用于深度研究、行业分析、竞品调研和多源专业报告的通用 Agent Skill。
 
 [English README](README.md)

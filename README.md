@@ -1,5 +1,7 @@
 # Deep Search Principles
 
+[![skills.sh](https://skills.sh/b/zheminlin266/deep-search-principles)](https://skills.sh/zheminlin266/deep-search-principles)
+
 A reusable agent skill for rigorous deep research, industry analysis, competitor research, and multi-source reports.
 
 [中文说明](README.zh-CN.md)
